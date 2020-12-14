@@ -1,6 +1,9 @@
 package com.example.naproject
 
-import java.io.Serializable
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
-data class Rocket( val name: String, val launches: String) : Serializable{
+
+@Parcelize
+data class Rocket( val name: String, val launches: String) : Parcelable{
 }

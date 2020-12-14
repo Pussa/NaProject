@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/buttonGoToRocket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перейти к ракетам"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+    <Button
+        android:id="@+id/buttonGoToLaunches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перейти к запускам"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:id="@+id/buttonGoToCores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перейти к ядрам"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+    <Button
+        android:id="@+id/buttonGoToCapsules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перейти к капсулам"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:id="@+id/buttonGoToDragons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перейти к Dragons"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+    <Button
+        android:id="@+id/buttonGoToHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перейти к истории"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+    <Button
+        android:id="@+id/buttonGoToMissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перейти к миссиям"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+    <Button
+        android:id="@+id/buttonGoToShips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перейти к кораблям"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+    <Button
+        android:id="@+id/buttonGoToRoadster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Перейти к машине"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
