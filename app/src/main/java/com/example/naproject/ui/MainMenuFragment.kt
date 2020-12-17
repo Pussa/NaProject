@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import com.example.naproject.R
 import com.example.naproject.Rocket
+import com.example.naproject.feature.search.SearchFragment
 import kotlinx.android.synthetic.main.fragment_main_menu.*
 
 class MainMenuFragment : Fragment(R.layout.fragment_main_menu) {
@@ -66,6 +67,13 @@ class MainMenuFragment : Fragment(R.layout.fragment_main_menu) {
             requireFragmentManager().beginTransaction()
                     .replace(R.id.container, ShipsFragment())
                     .addToBackStack("SF")
+                    .commit()
+        })
+
+        buttonGoToSearch.setOnClickListener({
+            requireFragmentManager().beginTransaction()
+                    .replace(R.id.container, SearchFragment())
+                    .addToBackStack("SeF")
                     .commit()
         })
 
