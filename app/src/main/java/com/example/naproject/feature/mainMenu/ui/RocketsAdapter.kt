@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.naproject.R
 import com.example.naproject.Rocket
+import com.example.naproject.di.SpacexApi
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.top_rockets_item.*
 
@@ -36,7 +37,7 @@ class RocketsAdapter(private val onRocketsClick: (Rocket) -> Unit) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = getItem(position)
         holder.RocketsName.text = item.name
-        holder.launches.text = item.launches
+        holder.successPct.text = item.successPct.toString()
         holder.containerView.setOnClickListener {
             onRocketsClick(item)
         }

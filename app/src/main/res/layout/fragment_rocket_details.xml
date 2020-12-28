@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,7 +8,7 @@
         android:id="@+id/rocketname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name:FAlcon9"
+        android:text="Name"
         android:textSize="20sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -18,10 +17,26 @@
         android:id="@+id/Launches"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Number of launches: 9"
+        android:text="Success pct of launches"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rocketname"/>
+    <TextView
+        android:id="@+id/coast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Success pct of launches"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Launches"/>
+    <TextView
+        android:id="@+id/descrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coast"/>
 
 
 

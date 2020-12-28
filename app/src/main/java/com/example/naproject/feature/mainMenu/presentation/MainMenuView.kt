@@ -1,6 +1,7 @@
 package com.example.naproject.feature.mainMenu.presentation
 
 import com.example.naproject.Rocket
+import com.example.naproject.di.SpacexApi
 import moxy.MvpView
 import moxy.viewstate.strategy.AddToEndSingleStrategy
 import moxy.viewstate.strategy.AddToEndStrategy
@@ -14,6 +15,10 @@ interface MainMenuView: MvpView {
 
     @StateStrategyType(OneExecutionStateStrategy::class)
     fun openDetailScreen(rocket: Rocket)
+    @StateStrategyType(AddToEndSingleStrategy::class)
+    fun showLoading(isShow: Boolean) {
+
+    }
 
 
 }
